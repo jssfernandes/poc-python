@@ -1,0 +1,12 @@
+*.pyc
+.idea
+*.iml
+.vscode
+venv
+dist
+build
+*.egg-info
+.coverage
+coverage.xml
+**/__pycache__/
+*.pyo

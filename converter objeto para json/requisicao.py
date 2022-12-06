@@ -4,7 +4,7 @@ from pokemon import Pokemon
 
 
 pokemons = []
-for number in range(1, 2):
+for number in range(1, 152):
     url = f'https://pokeapi.co/api/v2/pokemon/{number}'
     response = requests.get(url)
 
@@ -21,3 +21,11 @@ print(jsonStr)
 print()
 
 
+# Exemplo 2: Converter propriedades do objeto de classe Python em string JSON
+# Neste exemplo, definiremos uma classe Python com diferentes tipos de dados como string, int e float, também foi incluido um ordenador e uma identação para exibir um print mais amigavel.
+
+#convert to JSON string
+jsonStr = json.dumps(pokemons[1].__dict__, sort_keys=True, indent=4)
+
+#print json string
+print(jsonStr)
